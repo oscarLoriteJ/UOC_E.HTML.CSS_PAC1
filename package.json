@@ -1,0 +1,25 @@
+{
+  "name": "uoc_e.html.css_pac1",
+  "version": "1.0.0",
+  "description": "PAC1 de l'assignatura. Web de personatges científico-tecnològics històrics rellevants.",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarLoriteJ/UOC_E.HTML.CSS_PAC1.git"
+  },
+  "keywords": [],
+  "author": "Oscar Lorite Jodar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarLoriteJ/UOC_E.HTML.CSS_PAC1/issues"
+  },
+  "homepage": "https://github.com/oscarLoriteJ/UOC_E.HTML.CSS_PAC1#readme",
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  }
+}
