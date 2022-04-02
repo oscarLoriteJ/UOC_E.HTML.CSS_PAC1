@@ -4,8 +4,11 @@
   "description": "PAC1 de l'assignatura. Web de personatges científico-tecnològics històrics rellevants.",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache",
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +23,8 @@
   },
   "homepage": "https://github.com/oscarLoriteJ/UOC_E.HTML.CSS_PAC1#readme",
   "devDependencies": {
-    "parcel": "^2.4.1"
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.4.1",
+    "rimraf": "^3.0.2"
   }
 }
