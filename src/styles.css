@@ -1,10 +1,125 @@
-h1{
-    color: hotpink;
-    font-family: cursive;
+/* Variables globals*/
+:root{
+    /* Colors */
+    --color-black: #000000;
+
 }
 
+/* Estils Genèrics */
+@font-face {
+    font-family: 'TitleFont';
+    src: url('./resources/VT323-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  }  
+
 body{
-    height:100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+}
+
+/* Estils Encapçalaments */
+.subcontainer h1{
+    color: #FFFFFF;
+    font-family: 'TitleFont';
+    font-size: 3.7rem;
+    line-height: 0.8;
+    margin:0;
+}
+
+.bgPortada {
+	background: linear-gradient(-45deg, #0027ca, #4102ca, #a502ca,#ca028b);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    overflow: hidden;
+	height: 100vh;
+}
+/* Animació de la portada */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* Header */
+.-mainHeader{
+    height:calc(17vh - 0.5em - 0.4em);
+}
+
+
+/* Estils main */
+main{
+    margin:0px;
+    padding:0px;
+}
+.cMain{
+    height: 88vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.container, .footerContent, .headerContent{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.container{
+    padding-bottom:3em;
+}
+.c80, .footerContent, .headerContent{
+    width:80%;
+}
+
+.subcontainer{
+    padding:1em 0em 1em 0em;
+    width:50%;
+    height: calc(88vh - 2em);
+    text-align:center;
+    color: white;
+}
+
+.logoPPrincipal{
+    max-height: 200px;
+}
+
+.menuPortada{
+    display:flex;
+    justify-content: center;
+    gap: 0.8em;
+}
+.menuPortada li{
+    list-style: none;
+}
+.menuPortada li a {
+    padding: 0.3em 0.7em;
+    border:1px solid white;
+    border-radius: 4px;
+    transition: background-color 0.5s ease-out 100ms;
+    transition: color 0.5s ease-out 100ms;
+    color:white;
+    text-decoration: none;
+}
+
+.menuPortada li a:hover{
+    background-color:#FFFFFF;
+    color:black;
+}
+
+/* Footer*/
+footer{
+    width:100%;
+    padding-top:0.8em;
+    padding-bottom:0.6em;
+    margin:0;
+    background-color: var(--color-black);
+    color: white;
+    height:4em; 
+
+}
+.mainFooter{
+    height:calc(12vh - 0.8em - 0.6em); 
 }
