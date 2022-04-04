@@ -246,20 +246,20 @@ section h1{
     justify-content: center;
     align-items:stretch;
     align-content: stretch;
-    gap:1em;
-    min-height:6em;
+    gap:0.8em;
+    min-height:200px;
     list-style: none;
     position:relative;
 }
 
 .miniGallery li{
-    height: 6em;
-    width: 6em;
+    height: 200px;
+    width: 200px;
 }
 
 .miniGallery li img{
-    height: 6em;
-    width: 6em;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
