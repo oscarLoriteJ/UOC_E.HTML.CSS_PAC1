@@ -1,21 +1,89 @@
 <!DOCTYPE html>
 <html lang="ca">
     <head>
-        <meta charset="utf-8"/>
-        <title>Personatges Històrics</title>
-        <meta name="author" content="Óscar Lorite Jodar">
-        <meta name="description" content="Pàgina inicial de la PEC1">
+        <meta charset="utf-8">
+        <title>Personatges científico-tècnics :: Enllaços</title>
+
+        <meta name="author" content="Óscar Lorite Jódar">
+        <meta name="description" content="Pàgina d'enllaços de la PEC1">
         <meta name="keywords" content="pac1, eines html i css, personatges històrics">
 
         <!--Imports dels fitxers css i js-->
-        <link rel="stylesheet" href="newstyles.css"/>
+        <link rel="stylesheet" href="styles.css"/>
         <script type="module" src="app.js"></script>
+
     </head>
     <body>
-        <h1>Hello UOC!!</h1>
-        <p>hola que ase..kkkk..</p>
+        <div class="container" id="top">
+            <header>
+                <div class="headerContent">
+                    <img src="./resources/img/logo.png" alt="Logotip de l'aplicatiu"/>
+                    <h1><a href="index.html" title="">Personatges científico-tècnics</a></h1>
+                    
+                </div>
+            </header>
+            <div class="navegacio"> <!-- He hagut de crear aquest div addicional perquè el menú de navegació sigui sticky-->
+                <div class="headerContent">
+                    <nav>
+                        <ul>
+                            <li><a href="./presentacio.html" title="Enllaç a la pàgina 'Presentació'">Presentació</a></li>
+                            <li><a href="./categories.html" title="Enllaç a la pàgina 'Categories'">Categories</a></li>
+                            <li><a href="./enllacos.html" class="selected"  title="Enllaç a la pàgina 'Enllaços'">Enllaços</a></li>
+                        </ul>   
+                    </nav>
+                </div>
+            </div>
+            <main>  
+                <div class="c80">
+                    <section>
+                        <h1>Enllaços</h1>
+                        <p>A continuació trobareu els enllaços consultats per completar les biografies. També trobareu els links als arxius multimèida consultats. Cal remarcar que tots ells tenen llicència lliure (pertanyen al grup d'enllaços enviats al taulell de l'assignatura).</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Fonts biogràfiques</h2>
+                        <p>A continuació es llisten els enllaços a les fonts biogràfiques consultades per a la creació de les fitxes dels personatges:</p>
+                        <ul>
+                            <li><a href="http://wwwtet.com" title="Enllaç">Font1</a>, Biografia d'albert Einstein.<span class="consulta">[Consulta: 04/04/2022]</span></li>
+                        </ul>
+                    </section>
 
-        Font: https://fonts.google.com/specimen/VT323?preview.text=Hi%20hav%C3%ADa%20una%20v%C3%A8gada&preview.text_type=custom#standard-styles
-        
+                    <section>
+                        <h2>Recursos fotogràfics</h2>
+                        <p>A continuació es llisten els enllaços a les pàgines consultades per a l'obtenció de les fotografies que s'han emprat al projecte:</p>
+                        <ul>
+                            <li><a href="https://commons.wikimedia.org/wiki/File:Larry_Page_in_the_European_Parliament,_17.06.2009_(cropped).jpg" title="Enllaç fotografia Larry Page">Wikimedia Commons</a>, Fotografia de Larry Page.<span class="consulta">[Consulta: 04/04/2022]</span></li>
+                            <li><a href="https://commons.wikimedia.org/wiki/File:Marie_Curie_(Nobel-Chem).jpg" title="Enllaç a fotografia Marie Curie">Wikimedia Commons</a>, Fotografia de Marie Curie<span class="consulta">[Consulta: 04/04/2022]</span></li>
+                            <li><a href="https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head_(cropped).jpg" title="Enllaç fotografia d'Albert Einstein">Wikimedia Commons</a>, Fotografia d'Albert Einstein.<span class="consulta">[Consulta: 04/04/2022]</span></li>
+                            <li><a href="https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP.jpg" title="Enllaç fotografia de Steves Jobs">Wikimedia Commons</a>, Fotografia de Steves Jobs.<span class="consulta">[Consulta: 04/04/2022]</span></li>
+
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Recursos videogràfics</h2>
+                        <p>A continuació es llisten els enllaços a les pàgines consultades per a l'obtenció dels vídeos que s'han incrustat en les pàgines del projecte:</p>
+                        <ul>
+                            <li><a href="http://wwwtet.com" title="Enllaç">Font1</a>, Biografia d'albert Einstein.<span class="consulta">[Consulta: 04/04/2022]</span></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Altres recursos emprats</h2>
+                        <p>A continuació es llisten els enllaços a les pàgines de tots els recursos que s'han utilitzat però que no s'han pogut categoritzar en cap de les classes anteriors:</p>
+                        <ul>
+                            <li><a href="https://fonts.google.com/specimen/VT323?preview.text=Hi%20hav%C3%ADa%20una%20v%C3%A8gada&preview.text_type=custom#standard-styles" title="Enllaç a Google Fonts">Google Fonts</a>, Biografia d'albert Einstein.<span class="consulta">[Consulta: 04/04/2022]</span></li>
+                        </ul>
+                    </section>
+                </div>
+            </main> 
+            <footer class="mainFooter">
+                <div class="footerContent">                
+                    <!-- Footer autor-->
+                    <p>2021 &copy; UOC - Eines HTML i CSS - <b>PAC1</b>- Óscar Lorite Jódar</p>
+                </div>  
+                <!-- pageUp-->
+                <a href="#top" class="pageUp"><img src="./resources/img/pageUp.jpg" title="Icona per pujar al començament de la pàgina"></a>
+            </footer>
+        </div>
     </body>
-</html>
+    </html>

@@ -9,7 +9,7 @@
         <meta name="keywords" content="pac1, eines html i css, personatges històrics">
 
         <!--Imports dels fitxers css i js-->
-        <link rel="stylesheet" href="newstyles.css"/>
+        <link rel="stylesheet" href="styles.css"/>
         <script type="module" src="app.js"></script>
 
     </head>
@@ -17,7 +17,7 @@
         <div class="container" id="top">
             <header>
                 <div class="headerContent">
-                    <img src="./resources/img/logo.png" />
+                    <img src="./resources/img/logo.png" alt="Logotip de l'aplicatiu"/>
                     <h1><a href="index.html" title="">Personatges científico-tècnics</a></h1>
                     
                 </div>
@@ -26,7 +26,7 @@
                 <div class="headerContent">
                     <nav>
                         <ul>
-                            <li><a href="./presentacio.html" title="Enllaç a la pàgina 'Presentació'">Presentació</a></li>
+                            <li><a href="./presentacio.html" class="selected" title="Enllaç a la pàgina 'Presentació'">Presentació</a></li>
                             <li><a href="./categories.html" title="Enllaç a la pàgina 'Categories'">Categories</a></li>
                             <li><a href="./enllacos.html" title="Enllaç a la pàgina 'Enllaços'">Enllaços</a></li>
                         </ul>   
@@ -36,27 +36,32 @@
             <main>  
                 <div class="c80">
                     <section>
-                        <h2>Què és Un grau i mig?</h2>
-                        <p>L'acord de París de 2015 sobre el canvi climàtic exigeix que l’escalfament global es mantingui per sota d'1,5 graus centígrads. S'està fent tot el que es pot al respecte?</p>
-                        <p>A Un grau i mig estem preocupats pel canvi climàtic i des d'aquí us volem mantenir informats i atents a les iniciatives d'acció climàtica.</p>
+                        <h1>Què és el portal?</h1>
+                        <p>Com s'indica en l'enunciat d'aquesta PEC, l'aplicació web és un portal biogràfic. Concretament, s'ha decidit escollir personatges que amb les seves fites han millorat la vida de la humanitat</p>
+                        <p>Així, a la web podreu trobar un repàs dels personatges científics i tecnològics destacats dels últims temps.</p>
                     </section>
                     
                     <section>
-                        <h2>Què és Un grau i mig?</h2>
-                        <p>L'acord de París de 2015 sobre el canvi climàtic exigeix que l’escalfament global es mantingui per sota d'1,5 graus centígrads. S'està fent tot el que es pot al respecte?</p>
-                        <p>A Un grau i mig estem preocupats pel canvi climàtic i des d'aquí us volem mantenir informats i atents a les iniciatives d'acció climàtica.</p>
+                        <h2>Categories</h2>
+                        <p>És evident que persones que amb els seus coneixements han permès evolucionar i fer avançar els coneixements humans són gairebé infinites.</p>
+                        <p>Per tal d'acotar una mica l'àmbit d'aquest aplicatiu, només ens centrem en personatges destacats en els àmbits científics i tecnològics. Així, els diveros personatges els dividim en aquestes dues categories.</p>
+                        <p>Si accediu a l'apartat 'Categories' del menú, trobareu el llistat dels diversos personatges segons l'ambit de les seves aportacions. </p>
                     </section>
 
                     <section>
-                        <h2>Què és Un grau i mig?</h2>
-                        <p>L'acord de París de 2015 sobre el canvi climàtic exigeix que l’escalfament global es mantingui per sota d'1,5 graus centígrads. S'està fent tot el que es pot al respecte?</p>
-                        <p>A Un grau i mig estem preocupats pel canvi climàtic i des d'aquí us volem mantenir informats i atents a les iniciatives d'acció climàtica.</p>
+                        <h2>Detalls dels personatges</h2>
+                        <p>Des del llistat de categories podreu accedir al detall biogràfic d'un personatge concret. En aquesta plana trobareu un petit resum de la vida del personatge, seguit d'un llistat de dades interessants. A més, trobareu un resum dels 'invents' o aportacions més destacades que va proporcionar. Finalment, també podreu visualitzar un vídeo on es resumeix la biografia del personatge.</p>
+                        <ul class="miniGallery">
+                            <li><img src="./resources/img/personatges/einstein.jpg" alt="Fotografia Albert Einstein"></li>
+                            <li><img src="./resources/img/personatges/stevesJobs.jpg" alt="Fotografia Steves Jobs"></li>
+                            <li><img src="./resources/img/personatges/marieCurie.jpg" alt="Fotografia Marie Curie"></li>
+                            <li><img src="./resources/img/personatges/larryPage.jpg" alt="Fotografia LarryPage"></li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2>Què és Un grau i mig?</h2>
-                        <p>L'acord de París de 2015 sobre el canvi climàtic exigeix que l’escalfament global es mantingui per sota d'1,5 graus centígrads. S'està fent tot el que es pot al respecte?</p>
-                        <p>A Un grau i mig estem preocupats pel canvi climàtic i des d'aquí us volem mantenir informats i atents a les iniciatives d'acció climàtica.</p>
+                        <h2>Enllaços</h2>
+                        <p>En aquesta secció (a la que podeu accedir a través de l'enllaç 'Enllaços' del menú de la pàgina), trobareu un recull de les fonts consultades. Aquests recull serà de qualsevol tipus de font: fotografies, vídeos, retalls biogràfics. Tot el que s'ha utilitzat per crear aquest aplicatiu web.</p>
                     </section>
                 </div>
             </main> 
@@ -66,7 +71,7 @@
                     <p>2021 &copy; UOC - Eines HTML i CSS - <b>PAC1</b>- Óscar Lorite Jódar</p>
                 </div>  
                 <!-- pageUp-->
-                <a href="#top" class="pageUp"><!--img src="" alt="Icona per pujar al començament de la pàgina"/--></a>
+                <a href="#top" class="pageUp"><img src="./resources/img/pageUp.jpg" title="Icona per pujar al començament de la pàgina"></a>
             </footer>
         </div>
     </body>
