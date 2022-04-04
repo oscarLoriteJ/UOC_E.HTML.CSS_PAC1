@@ -14,14 +14,14 @@
 body{
     margin: 0;
     font-family: "Helvetica", sans-serif;
-    font-size: 1.1rem;
+    font-size: 2.5rem;
 }
 
 /* Estils Encapçalaments */
 .subcontainer h1{
     color: #FFFFFF;
     font-family: 'TitleFont';
-    font-size: 3rem;
+    font-size: 2.5em;
     line-height: 0.8;
     margin:0;
 }
@@ -75,7 +75,7 @@ main{
 }
 
 .logoPPrincipal{
-    max-height: 250px;
+    max-height: 400px;
 }
 
 .menuPortada{
