@@ -33,6 +33,7 @@ body{
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
+    overflow: hidden;
 }
 /* Animació de la portada */
 @keyframes gradient {
@@ -47,7 +48,7 @@ body{
     }
 }
 .cMain{
-    height: 88vh;
+    height: 80vh;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -192,6 +193,17 @@ footer{
     padding: 0 2em 0 2em;
 }
 
+.fportada{
+    padding:0.8em 0.8em 0.6em 0.8em;
+    margin:0;
+    background-color: var(--color-black);
+    color: white;
+    height:4em;
+    text-align: center;
+    height:calc(20vh - 0.8em - 0.6em); 
+}
+
+
 /*      PEU DE PÀGINA       */
 .footerContent a{
     color: var(--text-blanc);
@@ -321,5 +333,12 @@ section h2{
         margin:0px;
         text-align: left;
         font-size:0.8em;
+    }
+
+    .fportada{ 
+        width:100%;
+        padding-top:0.8em;
+        padding-bottom:0.6em;
+        text-align: left;
     }
 }
