@@ -9,19 +9,19 @@
 @font-face {
     font-family: 'TitleFont';
     src: url('./resources/VT323-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-  }  
+}  
 
 body{
     margin: 0;
     font-family: "Helvetica", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* Estils Encapçalaments */
 .subcontainer h1{
     color: #FFFFFF;
     font-family: 'TitleFont';
-    font-size: 2.7rem;
+    font-size: 3rem;
     line-height: 0.8;
     margin:0;
 }
@@ -75,12 +75,13 @@ main{
 }
 
 .logoPPrincipal{
-    max-height: 200px;
+    max-height: 250px;
 }
 
 .menuPortada{
     display:flex;
     justify-content: center;
+    align-items:center;
     flex-direction:column;
     padding:0px;
     gap: 1.5em;
@@ -123,13 +124,12 @@ footer{
 
 /** Moble First --> @Media conté la distribució pel Desktop**/
 @media(min-width:992px){
+    body{
+        font-size: 1rem;
+    }
     /* Estils Encapçalaments */
     .subcontainer h1{
-        color: #FFFFFF;
-        font-family: 'TitleFont';
         font-size: 3.7rem;
-        line-height: 0.8;
-        margin:0;
     }
 
     .c80, .footerContent, .headerContent{
@@ -142,6 +142,10 @@ footer{
         height: calc(88vh - 2em);
         text-align:center;
         color: white;
+    }
+
+    .logoPPrincipal{
+    max-height: 200px;
     }
 
     .menuPortada{
