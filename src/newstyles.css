@@ -1,0 +1,325 @@
+/* Variables globals*/
+:root{
+    /* Colors */
+    --color-black: #000000;
+    --color-contrast: #ff00ac;
+    --color-blau: #002fff;
+    --text-blanc: #ffffff;
+
+}
+
+/* Estils Genèrics */
+@font-face {
+    font-family: 'TitleFont';
+    src: url('./resources/VT323-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+body{
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* index.html - PORTADA */
+.subcontainer h1{
+    color: #FFFFFF;
+    font-family: 'TitleFont';
+    font-size: 2.5em;
+    line-height: 0.8;
+    margin:0;
+}
+.bgPortada {
+    background: linear-gradient(-45deg, #0027ca, #4102ca, #a502ca,#ca028b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+/* Animació de la portada */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.cMain{
+    height: 88vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.subcontainer{
+    padding:1em 0em 1em 0em;
+    width:90%;
+    text-align:center;
+    color: white;
+}
+.logoPPrincipal{
+    max-height: 400px;
+}
+.menuPortada{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    padding:0px;
+    gap: 1.5em;
+}
+.menuPortada li{
+    list-style: none;
+}
+.menuPortada li a {
+    padding: 0.6em 1.1em;
+    border:1px solid white;
+    border-radius: 4px;
+    transition: background-color 0.5s ease-out 100ms;
+    transition: color 0.5s ease-out 100ms;
+    color:white;
+    text-decoration: none;
+}
+.menuPortada li a:hover{
+    background-color:#FFFFFF;
+    color:black;
+}
+
+
+
+/** HEADER **/
+.headerContent{
+    padding-top: 0.2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerContent img{
+    max-width: 200px;
+}
+.headerContent h1{
+    font-weight:800;
+    font-size: 5.5em;
+    font-family: 'TitleFont';
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+.headerContent h1 a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*      MENU NAVEGACIÓ PRINCIPAL        */
+nav{
+    padding-bottom: 2em;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding:0px;
+}
+nav ul li{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2em;
+    padding: 0.2em;
+    text-align: center;
+}
+nav ul li a{
+    color: var(--color-black);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: var(--color-contrast);
+    text-decoration: none;
+}
+.selected{
+    color: var(--color-contrast) !important;
+}
+
+/** DISTRIBUCIÓ CONTINGUTS ***/
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+}
+header{
+    grid-column: 1/1;
+    grid-row: 1;
+    background-color: white;
+    color:black;
+}
+.navegacio{
+    grid-column: 1/1;
+    grid-row:2;
+    background-color: white;
+    color:black;
+
+    position: sticky;
+    top:0;
+}
+.navegacio .headerContent{
+    padding: 0;
+}
+main{
+    grid-column: 1/1;
+    grid-row: 3;
+    margin:0;
+}
+section{
+    padding: 0em 0.8em;
+}
+
+
+footer{
+    background-color: var(--color-black);
+    color:white;
+    bottom:0;
+}
+.footerContent{
+    text-align: center;
+    line-height: 1.6;
+}
+.footerContent p{
+    font-size: 1.8em;
+    padding: 0 2em 0 2em;
+}
+
+/*      PEU DE PÀGINA       */
+.footerContent a{
+    color: var(--text-blanc);
+    text-decoration: none;
+}
+.footerContent a:hover{
+    color: var(--color-contrast)
+}
+.footerContent{
+    opacity:0.7;
+}
+.pageUp{
+    float: right;
+}
+
+
+/*  Títols d'encapçalament*/
+section h2{
+    font-family:'TitleFont';
+    font-size: 3em;
+    color:var(--color-blau);
+    border-bottom: 1px solid var(--color-contrast);
+}
+
+/** *****
+*
+*Mobile First --> @media contindrà la distribució pel DESKTOP**/ 
+@media (min-width: 992px){
+    body{
+        font-size: 16px;
+    }
+
+    /* Portada - index.html */
+    .subcontainer h1{
+        font-size: 3.7rem;
+    }
+
+    .c80, .footerContent, .headerContent{
+        width:80%;
+    }
+
+    .subcontainer{
+        padding:1em 0em 1em 0em;
+        width:50%;
+        height: calc(88vh - 2em);
+        text-align:center;
+        color: white;
+    }
+
+    .logoPPrincipal{
+    max-height: 200px;
+    }
+
+    .menuPortada{
+        flex-direction: row;
+    }
+
+    .menuPortada{
+        gap: 0.8em;
+    }
+    .menuPortada li{
+        list-style: none;
+    }
+    .menuPortada li a {
+        padding: 0.3em 0.7em;
+    }
+
+
+    /* header */
+    .headerContent, .c80, .footerContent{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .headerContent{
+        padding-top: 0.2em;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .headerContent img{
+        max-width: 80px;
+    }
+    .headerContent h1{
+        text-align: left;
+        font-size: 2em;
+        margin-bottom:0;
+    }
+    nav{
+        padding-bottom:0px;
+    }
+    nav ul{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    nav ul li{
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 0.9em;
+        padding: 0.2em;
+        margin-right: 1.5em;
+    }
+
+    /* presentacio.html */
+    section{
+        padding:0;
+        margin-bottom: 3em;
+    }
+    section h2{
+        font-size: 2em;
+        font-weight: 800;
+
+    }
+
+
+    /* footer */
+    footer{
+        padding:2em;
+    }
+    .footerMedia img{
+        transform: scale(1.1);
+        padding: 0.2em; 
+    }
+    .footerContent p{
+        padding: 0em;
+        margin:0px;
+        text-align: left;
+        font-size:0.8em;
+    }
+}
