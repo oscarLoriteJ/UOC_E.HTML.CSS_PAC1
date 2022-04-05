@@ -160,13 +160,14 @@ header{
     color:black;
 }
 .navegacio{
+    position: relative;
     grid-column: 1/1;
     grid-row:2;
     background-color: white;
     color:black;
-
     position: sticky;
     top:0;
+    z-index: 1;
 }
 .navegacio .headerContent{
     padding: 0;
@@ -249,7 +250,6 @@ section h1{
     gap:0.8em;
     min-height:200px;
     list-style: none;
-    position:relative;
 }
 
 .miniGallery li{
@@ -262,6 +262,54 @@ section h1{
     width: 200px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+/*categories.html*/
+.carrouselCateg{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    gap:0.7em;
+    justify-content: center;
+    align-content: center;
+}
+
+.carrouselItem{
+    width:240px;
+    height:200px;
+    text-decoration: none;
+}
+
+.carrouselItem img{
+    position: absolute;
+    width: 240px;
+    height: 200px;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.carrouselItem .itemText{
+    position:relative;
+    box-sizing: border-box;
+    width:240px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    color:white;
+    font-family:'TitleFont';
+    font-size: 1.5em;
+    opacity: 0;
+}
+
+.itemText:hover{
+    transition: all 0.5s ease-out;
+    background: rgba(0,0,0,0.6);
+    border-top: 10px solid var(--color-contrast);
+    border-bottom: 10px solid var(--color-contrast);
+    opacity: 1;
 }
 
 
@@ -394,6 +442,12 @@ section ul li a:hover{
         height: 11em;
         width: 11em;
         object-fit: cover;
+    }
+
+    /* categories.html*/
+    .carrouselCateg{
+        flex-direction:row;
+        justify-content: space-between;
     }
 
 

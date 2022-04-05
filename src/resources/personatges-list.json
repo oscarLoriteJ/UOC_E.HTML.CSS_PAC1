@@ -1,46 +1,46 @@
 {
     "tecnologics": [
         {
-            "nom": "",
-            "cognom": "",
-            "linkDetall": ""
+            "nom": "bbbb",
+            "cognom": "t",
+            "linkDetall": "t"
         },
         {
-            "nom": "",
-            "cognom": "",
-            "linkDetall": ""
+            "nom": "t",
+            "cognom": "t",
+            "linkDetall": "t"
         },
         {
-            "nom": "",
-            "cognom": "",
-            "linkDetall": ""
+            "nom": "t",
+            "cognom": "t",
+            "linkDetall": "t"
         },
         {
-            "nom": "",
-            "cognom": "",
-            "linkDetall": ""
+            "nom": "t",
+            "cognom": "t",
+            "linkDetall": "t"
         }
     ],
     "cientifics": [
         {
-            "nom": "",
-            "cognom": "",
-            "linkDetall": ""
+            "nom": "Marie",
+            "cognom": "Curie",
+            "linkDetall": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Marie_Curie_%28Nobel-Chem%29.jpg/471px-Marie_Curie_%28Nobel-Chem%29.jpg?20150120233712"
         },
         {
-            "nom": "",
-            "cognom": "",
-            "linkDetall": ""
+            "nom": "Albert",
+            "cognom": "Einstein",
+            "linkDetall": "./src/resources/personatges/einstein.jpg"
         },
         {
-            "nom": "",
-            "cognom": "",
-            "linkDetall": ""
+            "nom": "t",
+            "cognom": "t",
+            "linkDetall": "t"
         },
         {
-            "nom": "",
-            "cognom": "",
-            "linkDetall": ""
+            "nom": "t",
+            "cognom": "t",
+            "linkDetall": "t"
         }
     ]
 }

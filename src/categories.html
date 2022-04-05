@@ -1,18 +1,99 @@
 <!DOCTYPE html>
 <html lang="ca">
     <head>
-        <meta charset="utf-8"/>
-        <title>Personatges Històrics</title>
-        <meta name="author" content="Óscar Lorite Jodar">
-        <meta name="description" content="Pàgina inicial de la PEC1">
+        <meta charset="utf-8">
+        <title>Personatges científico-tècnics :: Categories</title>
+
+        <meta name="author" content="Óscar Lorite Jódar">
+        <meta name="description" content="Pàgina de categories de personatges de la PEC1">
         <meta name="keywords" content="pac1, eines html i css, personatges històrics">
 
         <!--Imports dels fitxers css i js-->
         <link rel="stylesheet" href="styles.css"/>
         <script type="module" src="app.js"></script>
+
     </head>
     <body>
-        <h1>Hello UOC!!</h1>
-        <p>hola que ase..kkkk..</p>
+        <div class="container" id="top">
+            <header>
+                <div class="headerContent">
+                    <img src="./resources/img/logo.png" alt="Logotip de l'aplicatiu"/>
+                    <h1><a href="index.html" title="">Personatges científico-tècnics</a></h1>
+                    
+                </div>
+            </header>
+            <div class="navegacio"> <!-- He hagut de crear aquest div addicional perquè el menú de navegació sigui sticky-->
+                <div class="headerContent">
+                    <nav>
+                        <ul>
+                            <li><a href="./presentacio.html" title="Enllaç a la pàgina 'Presentació'">Presentació</a></li>
+                            <li><a href="./categories.html" class="selected" title="Enllaç a la pàgina 'Categories'">Categories</a></li>
+                            <li><a href="./enllacos.html" title="Enllaç a la pàgina 'Enllaços'">Enllaços</a></li>
+                        </ul>   
+                    </nav>
+                </div>
+            </div>
+            <main>  
+                <div class="c80">
+                    <section>
+                        <h1>Categories</h1>
+                        <p>A continuació es mostren els personatges destacats separats per categories:</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Científics</h2>
+                        <div class="carrouselCateg" id="cCientif">
+                            <a class="carrouselItem" href="./detall-marie-curie.html" title="Enllaç pàgina detall Marie Curie">
+                                <img src="./resources/img/personatges/einstein.jpg" alt="Imatge del personatge"/>
+                                <span class="itemText">Hola</span>
+                            </a>
+                            <a class="carrouselItem" href="./detall-marie-curie.html" title="Enllaç pàgina detall Marie Curie">
+                                <img src="./resources/img/personatges/einstein.jpg" alt="Imatge del personatge"/>
+                                <span class="itemText">Hola</span>
+                            </a>
+                            <a class="carrouselItem" href="./detall-marie-curie.html" title="Enllaç pàgina detall Marie Curie">
+                                <img src="./resources/img/personatges/einstein.jpg" alt="Imatge del personatge"/>
+                                <span class="itemText">Hola</span>
+                            </a>
+                            <a class="carrouselItem" href="./detall-marie-curie.html" title="Enllaç pàgina detall Marie Curie">
+                                <img src="./resources/img/personatges/einstein.jpg" alt="Imatge del personatge"/>
+                                <span class="itemText">Hola</span>
+                            </a>
+                        </div>
+                
+                    </section>
+
+                    <section>
+                        <h2>Tecnològics</h2>
+                        <div class="carrouselCateg" id="cCientif">
+                            <a class="carrouselItem" href="./detall-marie-curie.html" title="Enllaç pàgina detall Marie Curie">
+                                <img src="./resources/img/personatges/einstein.jpg" alt="Imatge del personatge"/>
+                                <span class="itemText">Hola</span>
+                            </a>
+                            <a class="carrouselItem" href="./detall-marie-curie.html" title="Enllaç pàgina detall Marie Curie">
+                                <img src="./resources/img/personatges/einstein.jpg" alt="Imatge del personatge"/>
+                                <span class="itemText">Hola</span>
+                            </a>
+                            <a class="carrouselItem" href="./detall-marie-curie.html" title="Enllaç pàgina detall Marie Curie">
+                                <img src="./resources/img/personatges/einstein.jpg" alt="Imatge del personatge"/>
+                                <span class="itemText">Hola</span>
+                            </a>
+                            <a class="carrouselItem" href="./detall-marie-curie.html" title="Enllaç pàgina detall Marie Curie">
+                                <img src="./resources/img/personatges/einstein.jpg" alt="Imatge del personatge"/>
+                                <span class="itemText">Hola</span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </main> 
+            <footer class="mainFooter">
+                <div class="footerContent">                
+                    <!-- Footer autor-->
+                    <p>2021 &copy; UOC - Eines HTML i CSS - <b>PAC1</b>- Óscar Lorite Jódar</p>
+                </div>  
+                <!-- pageUp-->
+                <a href="#top" class="pageUp"><img src="./resources/img/pageUp.jpg" title="Icona per pujar al començament de la pàgina"></a>
+            </footer>
+        </div>
     </body>
-</html>
+    </html>
