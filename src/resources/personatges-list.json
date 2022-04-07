@@ -3,44 +3,45 @@
         {
             "nom": "bbbb",
             "cognom": "t",
-            "linkDetall": "t"
+            "linkImg": "t"
         },
         {
             "nom": "t",
             "cognom": "t",
-            "linkDetall": "t"
+            "linkImg": "t"
         },
         {
             "nom": "t",
             "cognom": "t",
-            "linkDetall": "t"
+            "linkImg": "t"
         },
         {
             "nom": "t",
             "cognom": "t",
-            "linkDetall": "t"
+            "linkImg": "t"
         }
     ],
     "cientifics": [
         {
             "nom": "Marie",
             "cognom": "Curie",
-            "linkDetall": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Marie_Curie_%28Nobel-Chem%29.jpg/471px-Marie_Curie_%28Nobel-Chem%29.jpg?20150120233712"
+            "linkImg": "marieCurie.jpg",
+            "linkPag":"./detall-marie-curie.html"
         },
         {
             "nom": "Albert",
             "cognom": "Einstein",
-            "linkDetall": "./src/resources/personatges/einstein.jpg"
+            "linkImg": "./resources/img/personatges/einstein.jpg"
         },
         {
             "nom": "t",
             "cognom": "t",
-            "linkDetall": "t"
+            "linkImg": "t"
         },
         {
             "nom": "t",
             "cognom": "t",
-            "linkDetall": "t"
+            "linkImg": "t"
         }
     ]
 }
