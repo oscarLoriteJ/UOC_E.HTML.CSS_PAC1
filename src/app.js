@@ -1,19 +1,50 @@
-console.log("Hello World");
+//Importem la llibreria moment
+import moment from 'moment';
+//Importem l'idioma català
+import 'moment/locale/ca';
+moment().format('LL');
+
+/** Ús de Moment js - DEPENDÈNCIA EXTERNA */
+export function printDatesSteve(){
+    //Dates Steve Jobs
+    const dnaiSteve = moment('04/04/2021');
+    const ddefSteve = moment('04/04/2021');
+
+    //Substituim element amb el DOM
+    document.getElementById("dnaixSteve").innerHTML = dnaiSteve;//dnaiSteve.format('LL');
+    document.getElementById("ddefSteve").innerHTML = dnaiSteve;
+}
+
+
+export function printDatesMarie(){
+    //Dates Marie Curie
+    const dnaiMarie = moment('04/04/2021');
+    const ddefMarie = moment('04/04/2021');
+
+    //Substituim element amb el DOM
+    document.getElementById("dnaixMarie").innerHTML = dnaiMarie;
+    document.getElementById("ddefMarie").innerHTML = ddefMarie;
+}
+
 
 /** Gestió de l'acordió per ocultar dades */
-let desplegable = document.getElementsByClassName("desplegable");
-
-for(let i=0; i<desplegable.length;i++){
-    desplegable[i].addEventListener("click", function(){
-        this.classList.toggle("active");
-        var desplegableText = this.nextElementSibling;
-        if (desplegableText.style.display === "block") {
-            desplegableText.style.display = "none";
-        } else {
-            desplegableText.style.display = "block";
-        }
-    });
+export function desplegables(){
+    let desplegable = document.getElementsByClassName("desplegable");
+    
+    for(let i=0; i<desplegable.length;i++){
+        desplegable[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            var desplegableText = this.nextElementSibling;
+            if (desplegableText.style.display === "block") {
+                desplegableText.style.display = "none";
+            } else {
+                desplegableText.style.display = "block";
+            }
+        });
+    }
 }
+
+
 
 
 

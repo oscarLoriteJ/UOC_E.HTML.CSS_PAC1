@@ -5,12 +5,19 @@
         <title>Personatges científico-tècnics :: Steve Jobs</title>
 
         <meta name="author" content="Óscar Lorite Jódar">
-        <meta name="description" content="Pàgina biografia detallada Steve Jobs>
+        <meta name="description" content="Pàgina biografia detallada Steve Jobs">
         <meta name="keywords" content="pac1, eines html i css, personatges històrics">
 
         <!--Imports dels fitxers css i js-->
         <link rel="stylesheet" href="styles.css"/>
-        <script type="module" src="app.js"></script>
+        <script type="module">
+            import {printDatesSteve,desplegables} from './app.js';
+            document.addEventListener("DOMContentLoaded", function(event){
+                printDatesSteve();
+                desplegables();
+            });
+
+        </script>
 
     </head>
     <body>
@@ -43,8 +50,8 @@
                         <div class="cEsquerre">
                             <section>
                                 <h2>Naixement</h2>
-                                <p><b>Data Naixement:</b> jdkd</p>
-                                <p><b>Data Defunció:</b> jdkd</p>
+                                <p><b>Data Naixement:</b> <span id="dnaixSteve"></span></p>
+                                <p><b>Data Defunció:</b> <span id="ddefSteve"></span></p>
 
                             </section>
                             <section>
@@ -104,7 +111,12 @@
 
                         </div>
                         <div class="cDret">
-                            kñlñl
+                            <section>
+                                <h2>Personatges Relacionats</h2>
+                                <div class="cDretContent"><a href="./detall-marie-curie.html">Marie Curie</a></div>
+                                <div class="cDretContent"><a href="#">Alan Turing</a></div>
+                                <div class="cDretContent"><a href="#">John von Neumann</a></div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -119,4 +131,4 @@
             </footer>
         </div>
     </body>
-    </html>
+</html>
