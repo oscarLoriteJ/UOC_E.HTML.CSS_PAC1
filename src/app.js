@@ -7,8 +7,8 @@ moment().format('LL');
 /** Ús de Moment js - DEPENDÈNCIA EXTERNA */
 export function printDatesSteve(){
     //Dates Steve Jobs
-    const dnaiSteve = moment('04/04/2021');
-    const ddefSteve = moment('04/04/2021');
+    const dnaiSteve = moment('24/02/1955');
+    const ddefSteve = moment('05/10/2011');
 
     //Substituim element amb el DOM
     document.getElementById("dnaixSteve").innerHTML = dnaiSteve;//dnaiSteve.format('LL');
@@ -18,8 +18,8 @@ export function printDatesSteve(){
 
 export function printDatesMarie(){
     //Dates Marie Curie
-    const dnaiMarie = moment('04/04/2021');
-    const ddefMarie = moment('04/04/2021');
+    const dnaiMarie = moment('07/11/1867');
+    const ddefMarie = moment('04/07/1934');
 
     //Substituim element amb el DOM
     document.getElementById("dnaixMarie").innerHTML = dnaiMarie;
