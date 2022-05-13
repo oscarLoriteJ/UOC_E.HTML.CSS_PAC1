@@ -645,7 +645,7 @@ section ul li a:hover{
 
     /* Portada - index.html */
     .subcontainer h1{
-        font-size: 2.7rem;
+        font-size: 1.7rem;
     }
 
     .c80, .footerContent, .headerContent{
@@ -662,7 +662,7 @@ section ul li a:hover{
     }
 
     .logoPPrincipal{
-    max-height: 200px;
+    max-height: 150px;
     }
 
     .menuPortada{
@@ -809,7 +809,7 @@ section ul li a:hover{
 
 /* footer */
 footer{
-    padding:1.2em;
+    padding:0.5em;
 }
 .footerMedia img{
     transform: scale(1.1);
@@ -823,8 +823,8 @@ footer{
 
 .fportada{ 
     width:100%;
-    padding-top:0.8em;
-    padding-bottom:0.6em;
+    padding-top:0.3em;
+    padding-bottom:0.3em;
     text-align: center;
 }
 
