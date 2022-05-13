@@ -245,6 +245,7 @@ footer{
     justify-content: center;
     list-style-type: none;
     padding:0px;
+    
 }
 .menuFooter li{
     text-transform: uppercase;
@@ -255,6 +256,7 @@ footer{
 .menuFooter li a{
     color: white;
     text-decoration: none;
+    font-size:1.4em;
 }
 .menuFooter li a:hover{
     color: var(--color-contrast);
@@ -444,7 +446,7 @@ section h1{
 
 .carrouselItem img{
     position: absolute;
-    min-width: 100%;
+    max-width: 100%;
     height: 350px;
     object-fit:cover;
 }
@@ -752,15 +754,15 @@ section ul li a:hover{
 }
 
 .carrouselItem{
-    width:240px;
-    height:200px;
+    max-width:240px;
+    max-height:200px;
     text-decoration: none;
 }
 
 .carrouselItem img{
     position: absolute;
-    width: 240px;
-    height: 200px;
+    max-width: 240px;
+    max-height: 200px;
     object-fit: cover;
     z-index: -1;
 
@@ -769,8 +771,8 @@ section ul li a:hover{
 .carrouselItem .itemText{
     position:relative;
     box-sizing: border-box;
-    width:240px;
-    height: 200px;
+    max-width:240px;
+    max-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -835,7 +837,7 @@ footer{
 .menuFooter li{
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding: 0.2em;
     margin-right: 1.5em;
 }
