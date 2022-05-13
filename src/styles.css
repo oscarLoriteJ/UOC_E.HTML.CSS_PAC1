@@ -53,8 +53,8 @@ body{
 
 }
 .clipPath li img{
-    max-width:100px;
-    min-height: 150px;
+    max-width:150px;
+    height: 170px;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     transition: clip-path 1s;
 }
@@ -645,7 +645,7 @@ section ul li a:hover{
 
     /* Portada - index.html */
     .subcontainer h1{
-        font-size: 3.7rem;
+        font-size: 2.7rem;
     }
 
     .c80, .footerContent, .headerContent{
