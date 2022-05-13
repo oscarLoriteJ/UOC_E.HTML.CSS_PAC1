@@ -1,3 +1,6 @@
+/* Import nova font de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
 /* Variables globals*/
 :root{
     /* Colors */
@@ -12,7 +15,10 @@
 @font-face {
     font-family: 'TitleFont';
     src: url('./resources/VT323-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
+}
+
+
+
 
 body{
     margin: 0;
@@ -24,7 +30,7 @@ body{
 .subcontainer h1{
     color: #FFFFFF;
     font-family: 'TitleFont';
-    font-size: 2.5em;
+    font-size: 1.9em;
     line-height: 0.8;
     margin:0;
 }
@@ -34,6 +40,28 @@ body{
     animation: gradient 15s ease infinite;
     height: 100vh;
     overflow: hidden;
+}
+
+.clipPath{
+    display:flex;
+    justify-content: center;
+
+}
+.clipPath li{
+    list-style:none;
+    filter: drop-shadow(-3px 12px 21px rgba(0,0,0,0.95));
+
+}
+.clipPath li img{
+    max-width:100px;
+    min-height: 150px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transition: clip-path 1s;
+}
+
+.clipPath li img:hover{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+
 }
 /* Animació de la portada */
 @keyframes gradient {
@@ -58,10 +86,11 @@ body{
     width:90%;
     text-align:center;
     color: white;
-    font-size: 2.2em;
+    font-size: 1.5em;
 }
 .logoPPrincipal{
-    max-height: 450px;
+    margin-top:20px;
+    max-height: 350px;
 }
 .menuPortada{
     display:flex;
@@ -87,7 +116,6 @@ body{
     background-color:#FFFFFF;
     color:black;
 }
-
 
 
 /** HEADER **/
@@ -184,6 +212,10 @@ section{
 
 footer{
     background-color: var(--color-black);
+    background-image: url(./resources/img/logoVect.svg);
+    background-size: 30%;
+    background-repeat:no-repeat;
+    background-position: center;
     color:white;
     bottom:0;
 }
@@ -192,7 +224,7 @@ footer{
     line-height: 1.6;
 }
 .footerContent p{
-    font-size: 1.8em;
+    font-size: 1.2em;
     padding: 0 2em 0 2em;
 }
 
@@ -204,6 +236,29 @@ footer{
     height:4em;
     text-align: center;
     height:calc(20vh - 0.8em - 0.6em); 
+}
+
+.menuFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding:0px;
+}
+.menuFooter li{
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0.1em;
+    text-align: center;
+}
+.menuFooter li a{
+    color: white;
+    text-decoration: none;
+}
+.menuFooter li a:hover{
+    color: var(--color-contrast);
+    text-decoration: none;
 }
 
 
@@ -239,6 +294,112 @@ section h1{
     color:var(--color-black);
     border-bottom: 3px solid var(--color-contrast);
 }
+
+
+.svgAnimat{
+    display:block;
+    margin: auto;
+}
+
+#personatges{
+    animation-name: animPersonatges;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#cientifico{
+    animation-name: animRestaText;
+    animation-duration:10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#guio{
+    animation-name: animRestaText;
+    animation-duration:10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#tecnics{
+    animation-name: animRestaText;
+    animation-duration:10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes animPersonatges {
+    0% {
+        stroke:var(--color-contrast);
+        fill:none;
+        fill-opacity: 0%;
+        stroke-width: 1px;
+        stroke-dashoffset: 100px;
+        stroke-dasharray: 150px;
+        stroke-opacity: 100%;
+    }
+    50%{
+        stroke: var(--color-contrast);
+        fill: var(--color-contrast);
+        fill-opacity: 0%;
+        stroke-width: 1px;
+        stroke-dashoffset: 0px;
+        stroke-dasharray: 10px;
+        stroke-opacity: 100%;
+    }
+    100% {
+        stroke:var(--color-contrast);
+        fill:var(--color-contrast);
+        fill-opacity: 100%;
+        stroke-width: 2px;
+        stroke-dashoffset: 0px;
+        stroke-dasharray: 2x;
+        stroke-opacity: 0%;
+    }
+}
+
+@keyframes animRestaText {
+    0% {
+        stroke:var(--color-black);
+        fill:none;
+        fill-opacity: 0%;
+        stroke-width: 1px;
+        stroke-dashoffset: 100px;
+        stroke-dasharray: 150px;
+        stroke-opacity: 100%;
+    }
+    50%{
+        stroke: var(--color-black);
+        fill: var(--color-black);
+        fill-opacity: 0%;
+        stroke-width: 1px;
+        stroke-dashoffset: 0px;
+        stroke-dasharray: 10px;
+        stroke-opacity: 100%;
+    }
+    100% {
+        stroke:var(--color-contrast);
+        fill:var(--color-black);
+        fill-opacity: 100%;
+        stroke-width: 2px;
+        stroke-dashoffset: 0px;
+        stroke-dasharray: 2x;
+        stroke-opacity: 0%;
+    }
+}
+
 
 .miniGallery{
     display:flex;
@@ -278,20 +439,20 @@ section h1{
     width:100%;
     height:350px;
     text-decoration: none;
+    position: relative;
 }
 
 .carrouselItem img{
     position: absolute;
-    width: 94%;
+    min-width: 100%;
     height: 350px;
     object-fit:cover;
-    z-index: -1;
 }
 
 .carrouselItem .itemText{
     position:relative;
     box-sizing: border-box;
-    width:99%;
+    width:100%;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -313,15 +474,16 @@ section h1{
 
 /* detall.html */
 .presentacioPerson{
-    width: 100%;
-    height: 300px;
-    background: saddlebrown;
+    min-width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
 }
 
 .presentacioPerson img{
     position: absolute;
-    width: 100%;
-    height:300px;
+    min-width: 100%;
+    height:450px;
     object-fit: cover;
 }
 
@@ -331,12 +493,33 @@ section h1{
     padding:0.4em;
     color:white;
     font-family:'TitleFont';
-    background-color: rgba(0,0,0,0.6);
-    border-top: 5px solid var(--color-contrast);
+    border-top: 10px solid var(--color-contrast);
     text-align: center;
     font-size: 3.5em;
     bottom: 0px;
+    background-color: rgba(0,0,0,0.6);
+
+    animation-name: animNomPersonatge;
+    animation-duration:5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
 }
+
+@keyframes animNomPersonatge {
+    to {
+        background-color: rgba(0,0,0,0.2);
+        transform: scale(1);
+        color:var(--color-contrast)
+    }
+    from {
+        background-color: rgba(0,0,0,0.8);
+        transform:scale(1.5);
+        color:var(--text-blanc)
+    }
+}
+
 
 .contingut{
     display: grid;
@@ -624,24 +807,38 @@ section ul li a:hover{
 
 
 
-    /* footer */
-    footer{
-        padding:2em;
-    }
-    .footerMedia img{
-        transform: scale(1.1);
-        padding: 0.2em; 
-    }
-    .footerContent p{
-        padding: 0em;
-        margin:0px;
-        font-size:0.8em;
-    }
+/* footer */
+footer{
+    padding:1.2em;
+}
+.footerMedia img{
+    transform: scale(1.1);
+    padding: 0.2em; 
+}
+.footerContent p{
+    padding: 0em;
+    margin:0px;
+    font-size:0.8em;
+}
 
-    .fportada{ 
-        width:100%;
-        padding-top:0.8em;
-        padding-bottom:0.6em;
-        text-align: center;
-    }
+.fportada{ 
+    width:100%;
+    padding-top:0.8em;
+    padding-bottom:0.6em;
+    text-align: center;
+}
+
+.menuFooter {
+    padding-bottom:0px;
+    flex-direction: row;
+    justify-content: center;
+}
+.menuFooter li{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.9em;
+    padding: 0.2em;
+    margin-right: 1.5em;
+}
+
 }

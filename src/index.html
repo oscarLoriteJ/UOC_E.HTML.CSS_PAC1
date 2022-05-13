@@ -6,6 +6,8 @@
         <meta name="author" content="Óscar Lorite Jodar">
         <meta name="description" content="Pàgina inicial de la PEC1">
         <meta name="keywords" content="pac1, eines html i css, personatges històrics">
+        
+        <link rel="icon" href="./resources/img/logoIcon.ico">
 
         <!--Imports dels fitxers css i js-->
         <link rel="stylesheet" href="styles.css"/>
@@ -15,9 +17,20 @@
         <main>
             <div class="cMain">
                 <div class="subcontainer">
-                    <img class="logoPPrincipal" src="./resources/img/logo.png" alt="Logotip de l'aplicatiu"/>
+                    <img class="logoPPrincipal" src="./resources/img/logoVect.svg" alt="Logotip de l'aplicatiu"/>
                     <h1>Portal web biogràfic:<br><span style="font-size:0.7em;">Personatges Científico-Tecnològics rellevants</span></h1>
                     <p>Descobreix les dades biogràfiques més importants dels personatges il·lustres en els àmbits científic i tecnològic</p>
+                    
+                    <!--Clip-path-->
+                    <ul class="clipPath">
+                        <li><img src="./resources/img/personatges/einstein.jpg" alt="Fotografia Albert Einstein"></li>
+                        <li><img src="./resources/img/personatges/stevesJobs.jpg" alt="Fotografia Steves Jobs"></li>
+                        <li><img src="./resources/img/personatges/marieCurie.jpg" alt="Fotografia Marie Curie"></li>
+                        <li><img src="./resources/img/personatges/larryPage.jpg" alt="Fotografia LarryPage"></li>
+                    </ul>
+                    
+                    <br>
+                    
                     <ul class="menuPortada">
                         <li><a href="./categories.html" title="Enllaç a la secció Categories">Categories</a></li>
                         <li><a href="./presentacio.html" title="Enllaç a la secció Presentació">Presentació</a></li>
@@ -28,6 +41,11 @@
         </main> 
         <footer class="fportada">
             <div class="footerContent">
+                <ul class="menuFooter">
+                    <li><a href="./categories.html" title="Enllaç a la secció Categories">Categories</a></li>
+                    <li><a href="./presentacio.html" title="Enllaç a la secció Presentació">Presentació</a></li>
+                    <li><a href="./enllacos.html" title="Enllaç a la secció enllaços">Enllaços</a></li>
+                </ul>
                 <p>2022 &copy; UOC - Eines HTML i CSS - Óscar Lorite Jódar</p>
             </div>  
         </footer>

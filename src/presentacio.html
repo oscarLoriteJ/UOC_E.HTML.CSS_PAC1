@@ -8,6 +8,8 @@
         <meta name="description" content="Pàgina de presentació de la PEC1">
         <meta name="keywords" content="pac1, eines html i css, personatges històrics">
 
+        <link rel="icon" href="./resources/img/logoIcon.ico">
+
         <!--Imports dels fitxers css i js-->
         <link rel="stylesheet" href="styles.css"/>
         <script type="module" src="app.js"></script>
@@ -17,7 +19,7 @@
         <div class="container" id="top">
             <header>
                 <div class="headerContent">
-                    <img src="./resources/img/logo.png" alt="Logotip de l'aplicatiu"/>
+                    <img src="./resources/img/logoVect.svg" alt="Logotip de l'aplicatiu"/>
                     <h1><a href="index.html" title="">Personatges científico-tècnics</a></h1>
                     
                 </div>
@@ -37,6 +39,39 @@
                 <div class="c80">
                     <section>
                         <h1>Què és el portal?</h1>
+                        <!-- Arxiu SVG animat per CSS-->
+                        <svg class="svgAnimat" width="500" height="190">
+                            <text x="80"  y="50" id="personatges"
+                            style="font-family: 'Boogaloo', cursive;
+                                   font-size  : 64;
+                                   stroke     : var(--color-contrast);
+                                   fill       : none">
+                                PERSONATGES
+                            </text>
+                            <text x="90"  y="100" id="cientifico"
+                            style="font-family: 'Boogaloo', cursive;
+                                   font-size  : 42;
+                                   stroke     : var(--color-black);
+                                   fill       : none;">
+                                científico
+                            </text>
+                            <text x="250"  y="130" id="guio"
+                            style="font-family: 'Boogaloo', cursive;
+                                   font-size  : 52;
+                                   stroke     : var(--color-black);
+                                   fill       : none;">
+                                -
+                            </text>
+                            <text x="300"  y="150" id="tecnics"
+                            style="font-family: 'Boogaloo', cursive;
+                                   font-size  : 42;
+                                   stroke     : var(--color-black);
+                                   fill       : none;">
+                                tècnics
+                            </text>
+                        </svg>
+
+
                         <p>Com s'indica en l'enunciat d'aquesta PEC, l'aplicació web és un portal biogràfic. Concretament, s'ha decidit escollir personatges que amb les seves fites han millorat la vida de la humanitat</p>
                         <p>Així, a la web podreu trobar un repàs dels personatges científics i tecnològics destacats dels últims temps.</p>
                     </section>
@@ -66,7 +101,12 @@
                 </div>
             </main> 
             <footer class="mainFooter">
-                <div class="footerContent">                
+                <div class="footerContent">  
+                    <ul class="menuFooter">
+                        <li><a href="./categories.html" title="Enllaç a la secció Categories">Categories</a></li>
+                        <li><a href="./presentacio.html" title="Enllaç a la secció Presentació">Presentació</a></li>
+                        <li><a href="./enllacos.html" title="Enllaç a la secció enllaços">Enllaços</a></li>
+                    </ul>              
                     <!-- Footer autor-->
                     <p>2022 &copy; UOC - Eines HTML i CSS - <b>PAC1</b>- Óscar Lorite Jódar</p>
                 </div>  
