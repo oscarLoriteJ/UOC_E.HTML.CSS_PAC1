@@ -411,16 +411,16 @@ section h1{
     gap:0.8em;
     min-height:200px;
     list-style: none;
+    padding:0;
 }
 
 .miniGallery li{
-    height: 200px;
-    width: 200px;
+    margin-top: 0.5em;
 }
 
 .miniGallery li img{
-    height: 200px;
-    width: 200px;
+    min-height: 250px;
+    min-width: 250px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -733,14 +733,12 @@ section ul li a:hover{
     }
 
     .miniGallery li{
-        height: 11em;
-        width: 11em;
         overflow: hidden;
     }
 
     .miniGallery li img{
-        height: 11em;
-        width: 11em;
+        min-height: 200px;
+        min-width: 200px;
         object-fit: cover;
     }
 
@@ -830,6 +828,7 @@ footer{
 
 .menuFooter {
     padding-bottom:0px;
+    margin: 0.5em;
     flex-direction: row;
     justify-content: center;
 }
