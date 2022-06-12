@@ -15,6 +15,7 @@
 @font-face {
     font-family: 'TitleFont';
     src: url('./resources/VT323-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    font-display: swap;
 }
 
 
@@ -704,6 +705,7 @@ section ul li a:hover{
     }
     .headerContent img{
         max-width: 80px;
+        max-height: 80px;
     }
     .headerContent h1{
         text-align: left;
